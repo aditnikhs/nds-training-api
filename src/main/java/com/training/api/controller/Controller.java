@@ -60,7 +60,7 @@ public class Controller {
 					.save(new User(user.getUser_name(), 
                     new Timestamp(new Date().getTime()), 
                     user.getCreated_by(), 
-                    new java.sql.Date(new Date().getTime()),
+                    null,
                     user.getUpdated_by(),
                     user.getDeleted_date(),
                     "A"));
