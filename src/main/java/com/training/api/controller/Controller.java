@@ -85,7 +85,7 @@ public class Controller {
 	}
 
     @DeleteMapping("/users/{id}")
-	public ResponseEntity<User> deleteUser(@PathVariable("id") long id, @RequestBody User user) {
+	public ResponseEntity<User> deleteUser(@PathVariable("id") long id) {
 		Optional<User> userData = userService.findById(id);
 		if (userData.isPresent()) {
 			User _user = userData.get();
